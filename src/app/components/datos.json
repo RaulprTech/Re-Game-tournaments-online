@@ -1,0 +1,96 @@
+{
+  "tickets": [
+    {
+      "title": "Entrada Normal",
+      "src": "https://www.talent-land.mx/wp-content/uploads/2019/12/tl2020-home-icono-entrada-normal.png",
+      "info": "Incluye: \n Acceso al evento, podrás salir y entrar las veces que desees. \n Poder participar en TODOS los talleres, concursos, conferencias y actividades las 24 horas del día. \n Visita a los stands de toda la zona de exposición.",
+      "price": "400"
+    },
+    {
+      "title": "Entrada Vip",
+      "src": "https://www.talent-land.mx/wp-content/uploads/2019/12/tl2020-home-icono-entrada-vip.png",
+      "info": "Acceso al evento",
+      "price": "1400"
+    }
+  ],
+  "goldSponsors": [
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-sponsors-premium-ios-offices-330x130-01.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-sponsors-premium-citibanamex-330x130-1.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-universidades-universidad-iteso-330x130-01.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-sponsors-gold-steren-330x130-01.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-sponsors-silver-adobe-330x130-1.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/02/tl2020-sponsors-gold-logitech-330x130-03.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-sponsors-silver-adobe-330x130-1.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/02/tl2020-sponsors-gold-logitech-330x130-03.png"
+    }
+  ],
+  "silverSponsors": [
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-sponsors-premium-ios-offices-330x130-01.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-sponsors-premium-citibanamex-330x130-1.png"
+
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-universidades-universidad-iteso-330x130-01.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-sponsors-gold-steren-330x130-01.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-sponsors-silver-adobe-330x130-1.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/02/tl2020-sponsors-gold-logitech-330x130-03.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-sponsors-silver-adobe-330x130-1.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/02/tl2020-sponsors-gold-logitech-330x130-03.png"
+    }
+  ],
+  "bronzeSponsors": [
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-sponsors-premium-ios-offices-330x130-01.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-sponsors-premium-citibanamex-330x130-1.png"
+
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-universidades-universidad-iteso-330x130-01.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-sponsors-gold-steren-330x130-01.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-sponsors-silver-adobe-330x130-1.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/02/tl2020-sponsors-gold-logitech-330x130-03.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-sponsors-silver-adobe-330x130-1.png"
+    },
+    {
+      "src": "https://www.talent-land.mx/wp-content/uploads/2020/02/tl2020-sponsors-gold-logitech-330x130-03.png"
+    }
+  ]
+}
