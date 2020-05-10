@@ -1,16 +1,13 @@
 {
   "tickets": [
     {
-      "title": "Entrada Normal",
-      "src": "https://www.talent-land.mx/wp-content/uploads/2019/12/tl2020-home-icono-entrada-normal.png",
-      "info": "Incluye: \n Acceso al evento, podrás salir y entrar las veces que desees. \n Poder participar en TODOS los talleres, concursos, conferencias y actividades las 24 horas del día. \n Visita a los stands de toda la zona de exposición.",
-      "price": "400"
-    },
-    {
-      "title": "Entrada Vip",
-      "src": "https://www.talent-land.mx/wp-content/uploads/2019/12/tl2020-home-icono-entrada-vip.png",
+      "title": "https://s3.us-west-2.amazonaws.com/media.theopen.gg/images/2020/02/14/5e46d5f9eda55.png",
+      "src": "https://estaticos.elperiodico.com/resources/jpg/7/5/juego-fifa-1539020324257.jpg",
       "info": "Acceso al evento",
-      "price": "1400"
+      "date": "Noviembre 28, 2020",
+      "hour": "16:00",
+      "price": "80",
+      "disponibles": "20"
     }
   ],
   "goldSponsors": [

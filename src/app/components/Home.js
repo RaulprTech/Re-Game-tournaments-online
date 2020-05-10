@@ -1,33 +1,32 @@
 import React from 'react';
-import Button from './Button'
+
+const Titulo = (props) => {
+    return(
+        <div className="card text-center bg-dark">
+            <h1 className="display-3"><b className="text-danger">HOME </b><b> LEAGUE</b></h1>
+            <strong>#VamosASalirAdelante</strong>
+            <div className="container mt-3 mb-2">
+                <a type="button" href="#torneos" className="btn btn-lg btn-danger text-white">Ver Torneos</a>
+            </div>
+        </div>
+    )
+}
 
 function Home() {
     return (
-        <div className="container-fluid bg-info" id="home">
-            <div className="row">
-                <div className="col-sm mr-auto ml-auto mt-3 md-2">
-                    <img src="https://www.talent-land.mx/wp-content/uploads/2019/12/cl2019-jalisco-talent-land-2020-logo-03-480x203.png" className="img-fluid mx-auto d-block" alt="..." height="150px" width="350px"/>
-                </div>
-                <div className="col-sm ml-auto mr-auto md-2">
-                    <div className="card text-center text-white bg-transparent mt-3 mr-5 ml-5">
-                        <h1>EVENTO SIN NOMBRE</h1>
-                        <p>
-                            <strong> Fecha del evento | </strong>
-                            <strong> Lugar del evento</strong>
-                        </p>
+            <div className="row bg-dark" id="home">
+                <div className="card text-white">
+                    <img src="https://images.pexels.com/photos/46792/the-ball-stadion-football-the-pitch-46792.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" className="card-img" alt="..."/>
+                    <div className="card-img-overlay">
+                        <div className="col-sm">
+                            <Titulo/>
+                        </div>
+                        <div className="col-sm mt-3 md-3">
+                            <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/93857447_1406268956231430_8973654069805580288_o.jpg?_nc_cat=108&_nc_sid=8bfeb9&_nc_eui2=AeHoBqCWAAYFJT4npWz8SzUFepc9mUAYcLN6lz2ZQBhws_WHZmwxlBw9WTPpTkaN4BNCfTKp0wnTRXEhY5u7zTx6&_nc_oc=AQlawZEuLpPEmlt6sLJDPiLRJR7Pr2o4TIS7Zb9tMFlEGi7He62SMigVCxr-X87NA_A&_nc_ht=scontent-dfw5-2.xx&oh=2b225102392e2910cf3f699d9a28a6b1&oe=5ECFEAF7" className="img-fluid mx-auto d-block" alt="..." height="200px" width="400px" />
+                        </div>
                     </div>
-                    <Button name="Adquiere tu Entrada" link="#entradas"/>
                 </div>
-                <div className="col-12 p-2"></div>
-                    <div className="col-6 mr-auto ml-auto mt-3">
-                        <img src="https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-home-banner-enero-changing-the-world-01.png" className="img-fluid mx-auto d-block" alt="..." height="250px" width="450px"/>
-                    </div>
-                <div className="col-6 mr-auto ml-auto mt-3">
-                    <img src="https://www.talent-land.mx/wp-content/uploads/2020/01/tl2020-home-banner-enero-personajes-lands-01.png" className="img-fluid mx-auto d-block" alt="..." height="250px" width="450px"/>
-                </div>
-                <div className="col-12 p-2"></div>
             </div>
-        </div>
     )
 }
 export default Home;

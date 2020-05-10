@@ -11,6 +11,7 @@ const PaypalCheckoutButton = ({order}) => {
             production: '-- id--'
         },
         style: {
+            layout: 'vertical',
             label: 'paypal',
             size: 'medium',
             color: 'gold'

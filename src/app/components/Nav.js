@@ -1,57 +1,33 @@
 import React from 'react';
+//import logo from './src/revo.jpeg';
 
-function Nav(props) {
+
+const Nav = (props) => {
+
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-white">
-            <a className="navbar-brand text-success" href="/"><h1>{props.title}</h1></a>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark align-items-center">
+            <a className="navbar-brand text-danger" href="/">
+                <div className="d-flex flex-row bd-highlight">
+                    <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/26814995_799012183623780_4933161944715841644_n.png?_nc_cat=111&_nc_sid=09cbfe&_nc_eui2=AeFsSaZKO_GgkFKj0rqkOXzDuV9PoC3Myqi5X0-gLczKqL2yQAV6JF_j4Sg-vt_EOpLTgAjqBFhOPn0Fv_OAtdL5&_nc_oc=AQnTYDTxmeePmVzVRBujQ_-xO2AsFoZgPmpCaMjCKXww94KsJSwFLs_73oP1Fp2kldo&_nc_ht=scontent-qro1-1.xx&oh=0d856a27c4b74dc79684020b34f8eff3&oe=5ED1D001" width="40" height="40" className="d-inline-block" alt=""/>
+                    <h2 className="pl-3 bd-highlight">Revolucion Game</h2>
+                </div>
+            </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
-
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ml-auto">
-                    <li className="nav-item active">
-                        <a type="button" href="#entradas" className="btn btn-outline-success m-2"><strong>Entradas</strong></a>
-                    </li>
-                    <li className="nav-item active">
-                        <a className="nav-link text-success m-2" href="/agenda"><strong>Agenda</strong><span className="sr-only">(current)</span></a>
-                    </li>
-                    <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle text-success m-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <strong>Invitados</strong>
-                          </a>
-                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a className="dropdown-item" href="#">Zona Gaming</a>
-                            <a className="dropdown-item" href="#">Zona Maker</a>
-                        </div>
-                    </li>
-                    <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle text-success m-2" href="#sponsors" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <strong>Sponsors</strong>
-                          </a>
-                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a className="dropdown-item" href="#goldSponsors">Oro</a>
-                            <a className="dropdown-item" href="#silverSponsors">Plata</a>
-                            <a className="dropdown-item" href="#bronzeSponsors">Bronce</a>
-                            <div className="dropdown-divider"></div>
-                            <a className="dropdown-item" href="#">Unirse</a>
-                        </div>
-                    </li>
-                    <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle text-success m-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <strong>Aliados</strong>
-                          </a>
-                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a className="dropdown-item" href="#">Institucionales</a>
-                            <a className="dropdown-item" href="#">Estrategicas</a>
-                            <a className="dropdown-item" href="#">Comunidades</a>
-                            <a className="dropdown-item" href="#">Universidades</a>
-                            <div className="dropdown-divider"></div>
-                            <a className="dropdown-item" href="#">Unirse</a>
-                        </div>
+                    <li className="nav-item">
+                        <button type="button" href="#torneos" className="btn btn-outline-danger m-2"><strong>Torneos en linea</strong></button>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-success m-2" href="#"><strong>Competencias</strong></a>
+                        <a  className="nav-link text-danger m-2" href="#Nosotros"><strong>Nosotros</strong></a>
+                    </li>
+                    <li className="nav-item">
+                        <a  className="nav-link text-danger m-2" href="#Aliados"><strong>Aliados</strong></a>
+                    </li>
+                    <li className="nav-item">
+                        <a  className="nav-link text-danger m-2" href="#Agenda"><strong>Mas Torneos</strong></a>
                     </li>
                 </ul>
             </div>
