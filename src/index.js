@@ -1,36 +1,30 @@
-const express = require('express');
-const morgan = require('morgan');
-const path = require('path');
+import React, { Suspense } from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from "react-router-dom";
 
-const {mongoose} = require('./database');
+import * as serviceWorker from './serviceWorker';
 
-const app = express();
+import { FirebaseAppProvider } from 'reactfire';
+import firebaseConfig from './firebase-config';
 
-// Settings
-app.set('port', process.env.PORT || 3000);
+import App from './App';
 
-// Middlewares
-app.use(morgan('dev'));
-app.use(express.json());
 
-// Routes
-app.use('/api/tasks', require('./routes/tasks.routes'));
+ReactDOM.render(            
+                <React.StrictMode>
+                    <Suspense fallback={'Conectando la App...'}>
+                        <FirebaseAppProvider firebaseConfig={firebaseConfig}>
+                            <Router>
+                              <App />
+                            </Router>
+                        </FirebaseAppProvider>
+                    </Suspense>
+                </React.StrictMode>, 
+                document.getElementById('root')
+);
 
-app.get('/agenda', agenda);
-app.get('/competencias', competencias);
 
-function agenda(peticion, resultado){
-  resultado.send("<strong>Esta es la Agenda del Evento</strong>");
-}
-
-function competencias(peticion, resultado){
-  resultado.send("<strong>Esta es la lista de Competencias</strong>");
-}
-
-// Static files
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Starting the server
-app.listen(app.get('port'), () => {
-    console.log(`Server on port ${app.get('port')}`);
-})
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();

@@ -1,0 +1,26 @@
+{
+    "Evento": [
+        {
+        "name": "Revolucion Game",
+        "address": "/",
+        "Agenda": {
+            "name": "Agenda",
+            "address": "/agenda"
+        },
+        "Sponsors":{
+                "name": "Sponsors",
+                "address": "#sponsors",
+                "drops": ["Oro", "Plata", "Bronce", "Unete"]
+        },
+        "Aliados":{
+            "name": "Aliados",
+            "address": "#aliados",
+            "drops": ["Institucionales", "Estrategicos", "Comunidades", "Universidades", "Unete"]
+        },
+        "Torneos":{
+            "name": "Competencias",
+            "address": "/competencias"
+        }    
+    }
+]
+}
