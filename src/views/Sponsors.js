@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import { gears, fifa } from '../components/datos.json';
 
+import Tech from '../img/sponsors/techtronic.png'
+import amigas from '../img/sponsors/amigas.png'
+import sedeco from '../img/sponsors/sedeco.png'
+import icem from '../img/sponsors/icem.png'
+import lapalapa from '../img/sponsors/lapalapa.png'
+
+
 
 class Sponsors extends Component {
     constructor() {
@@ -13,10 +20,25 @@ class Sponsors extends Component {
 
     render() {
 
+        function select(img){
+            switch(img){
+                case "1":
+                    return Tech;
+                case "2":
+                    return sedeco;
+                case "3":
+                    return amigas;
+                case "4":
+                    return lapalapa;
+                case "5":
+                    return icem;
+            }
+        }
+
         const gears = this.state.gears.map((sponsor, i) => {
             return (
                 <div className="col align-items-center" key={i}>
-                    <img src={sponsor.src} className="img-fluid mx-auto d-block" alt="..." height="50px" width="200px" />
+                    <img src={select(sponsor.src)} className="img-fluid mx-auto d-block" alt="..." height="50px" width="200px" />
                 </div>
             )
         });
@@ -24,7 +46,7 @@ class Sponsors extends Component {
         const fifa = this.state.fifa.map((sponsor, i) => {
             return (
                 <div className="col align-items-center" key={i}>
-                    <img src={sponsor.src} className="img-fluid mx-auto d-block" alt="..." height="50px" width="200px" />
+                    <img src={select(sponsor.src)} className="img-fluid mx-auto d-block" alt="..." height="50px" width="200px" />
                 </div>
             )
         });

@@ -10,7 +10,6 @@ export default (props) => {
     const [ password, setPassword ] = useState(''); 
     const [ firstName, setFirstName ] = useState(''); 
     const [ lastName, setLastName ] = useState(''); 
-    const [ birthday, setBirthday ] = useState(''); 
 
 
     // hook ref
@@ -18,7 +17,6 @@ export default (props) => {
     const inputPassword = useRef();
     const inputFirstName = useRef();
     const inputLastName = useRef();
-    const inputBirthday = useRef();
 
     const firebase = useFirebaseApp();
 
@@ -26,14 +24,6 @@ export default (props) => {
 
     const submit = async () => {
         await firebase.auth().createUserWithEmailAndPassword(email, password);
-    }
-
-    const login = async () => {
-        await firebase.auth().signInWithEmailAndPassword(email, password);
-    }
-
-    const logout = async () => {
-        await firebase.auth().signOut();
     }
 
     const Galeria = (props) => {
@@ -133,7 +123,6 @@ export default (props) => {
                     </div>
                 </div>
             </div>
-            <Galeria/>
         </div>
     )
 }

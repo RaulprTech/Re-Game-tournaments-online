@@ -1,6 +1,5 @@
 {
   "projects": {
-    "default": "revo-game",
-    "revoluciongame": "revo-game"
+    "default": "revo-game"
   }
 }

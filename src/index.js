@@ -9,10 +9,17 @@ import firebaseConfig from './firebase-config';
 
 import App from './App';
 
+const Wait = (props) => {
+    return(
+        <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Cargando la Mejor Experiencia Gamer...</span>
+        </div>
+    )
+}
 
 ReactDOM.render(            
                 <React.StrictMode>
-                    <Suspense fallback={'Conectando la App...'}>
+                    <Suspense fallback={Wait}>
                         <FirebaseAppProvider firebaseConfig={firebaseConfig}>
                             <Router>
                               <App />

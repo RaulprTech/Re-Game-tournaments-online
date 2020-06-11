@@ -8,7 +8,7 @@ export default ({order}) => {
         env: 'sandbox',
         client: {
             sandbox: 'AfJH8KanfJlQ6PEIRpvhWXaRzz9S_JZVnkyRyWG4QflWaQfquHPhxNPjitsb6L6UDQTSkaJZgSJiwZkX',
-            production: '-- id--'
+            production: 'EHu_gIRB8Z3M235zwa3MFn9SbpdxQf2uTr7EG5wjCD3NuNrNg7uAWauhTk4FAMaOzICRS5Vl7hOSkIsi'
         },
         style: {
             layout: 'vertical',
