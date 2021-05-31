@@ -27,43 +27,47 @@ import Anuncios from './views/Anuncios';
 import Sponsors from './views/Sponsors';
 
 const Main = (props) => {
-    return(
-        <div className="">
-          <div className="container-fluid bg-dark">
-                <Home fondo={portada}/>
-                <div id="Duels" className="row">
-                    <img src={duels} className="card-img" alt="..."/>
-                </div>
-                <div id="Nosotros" className="row">
-                    <img src={gamers} className="card-img" alt="..."/>
-                </div>
-                <div id="Torneos"className="row pb-4 bg-danger">
-                    <Torneos/>
-                </div>
-                <Sponsors/>
-          </div>
-          <Anuncios/>
-          <Footer/>
+  return (
+    <>
+      <div className="bg-dark">
+        <Home fondo={portada} />
+        <div id="Duels" className="row">
+          <img src={duels} className="card-img" alt="..." />
         </div>
-    )
+        <div id="Nosotros" className="row">
+          <img src={gamers} className="card-img" alt="..." />
+        </div>
+        <div id="Torneos" className="row pb-4 bg-danger">
+          <Torneos />
+        </div>
+        <Sponsors />
+      </div>
+      <Anuncios />
+    </>
+  )
 }
 
 function App() {
   const user = useUser();
   return (
-    <div>
-      <Nav/>
-      <Switch>
-        <Route exact path="/" component={Main} />
-        <Route path="/Entrar" component={Login} />
-        <Route path="/Registro" component={Registro} />
-        <Route path="/Torneo" component={Torneo} />
-        <Route path="/SGears" component={SGears} />
-        <Route path="/GGears" component={GGears} />
-        <Route path="/Fifamx" component={Fifamx} />
-        <Route path="/Fifalg" component={Fifalg} />
-      </Switch>
-    </div>
+    <main className="bg-dark">
+      <header className="container">
+        <Nav />
+      </header>
+      <div className="container">
+        <Switch>
+          <Route exact path="/" component={Main} />
+          <Route path="/Entrar" component={Login} />
+          <Route path="/Registro" component={Registro} />
+          <Route path="/Torneo" component={Torneo} />
+          <Route path="/SGears" component={SGears} />
+          <Route path="/GGears" component={GGears} />
+          <Route path="/Fifamx" component={Fifamx} />
+          <Route path="/Fifalg" component={Fifalg} />
+        </Switch>
+        <Footer />
+      </div>
+    </main>
   );
 }
 

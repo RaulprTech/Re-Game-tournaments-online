@@ -1,4 +1,4 @@
-import React, {useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { eventos } from '../components/datos.json';
 
@@ -9,9 +9,9 @@ import liguilla from '../img/torneos/liguilla.png'
 
 export default (props) => {
     const [torneos, setTorneos] = useState(eventos);
-    
-    function select(img){
-        switch(img){
+
+    function select(img) {
+        switch (img) {
             case "g1v1":
                 return g1v1;
             case "g5v5":
@@ -24,11 +24,11 @@ export default (props) => {
     }
 
     const tickets = torneos.map((torneo) => {
-        return(
-        <div className="col mb-4 animate__animated animate__flip">
-            <Link to={torneo.link}>
-                <div className="card bg-danger text-white text-center">
-                    <img src={select(torneo.src)} className="card-img" alt={torneo.title}/>
+        return (
+            <div className="col mb-4 animate__animated animate__flip">
+                <Link to={torneo.link}>
+                    <div className="card bg-danger text-white text-center">
+                        <img src={select(torneo.src)} className="card-img" alt={torneo.title} />
                         <div className="card-img-overlay">
                             {/*
                                 <div className="row">
@@ -62,17 +62,17 @@ export default (props) => {
                                 </div>
                             */}
                         </div>
-                </div>
-            </Link>
-        </div>
+                    </div>
+                </Link>
+            </div>
         )
     })
 
-    return(
+    return (
         <div className="container-sm">
             <h1 className="display-4 text-center text-white m-4"><strong>Torneos</strong></h1>
             <div className="row row-cols-1 row-cols-md-3">
-                    {tickets}
+                {tickets}
             </div>
         </div>
     )

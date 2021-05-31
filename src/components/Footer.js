@@ -1,11 +1,11 @@
 import React from 'react';
 
 export default (props) => {
-    return(
-        <footer className="container-fluid pt-3 bg-white align-items-center">
-                <p className="attribution">
-                    Site made by <a href="https://www.facebook.com/TMakercampeche">TecnoMaker</a>
-                </p>
+    return (
+        <footer className="bg-danger align-items-center p-2">
+            <p className="attribution pt-3 text-white">
+                Site Created by <a className="text-white" href="https://raulprtech.netlify.app/">Raul Pacheco</a>
+            </p>
         </footer>
     )
 }
