@@ -1,2 +1,5 @@
 # RevoGame
-Sitio web de empresa de videojuegos, para administrar sus torneos online
+##Sitio web promocional de torneo para game center Revolucion Game
+### Publicado durante 2021
+
+
